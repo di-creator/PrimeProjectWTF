@@ -7,89 +7,74 @@
     tools:context=".page2">
 
     <ImageView
-        android:id="@+id/background_image"
-        android:layout_width="450dp"
-        android:layout_height="565dp"
-        android:src="@drawable/eclipse"
+        android:id="@+id/union3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/union3"
+        android:layout_marginTop="83dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="189dp" />
+        />
 
     <TextView
-        android:id="@+id/welcome_back"
+        android:id="@+id/accountCreate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="38dp"
-        android:paddingTop="70dp"
-        android:text="Welcome Back!"
+        android:paddingTop="40dp"
+        android:text="Create \n Account :)"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/welcomeIntro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="-10dp"
-        android:text="Enter Your Username &amp; Password"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome_back" />
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="110dp"
-        android:hint="Username"
-        android:textSize="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcomeIntro" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/enterEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="43dp"
-        android:layout_marginTop="67dp"
-        android:hint="Password"
+        android:layout_marginTop="80dp"
+        android:hint="Enter E-mail Id"
         android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/username" />
+        app:layout_constraintTop_toBottomOf="@id/accountCreate" />
+
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="50dp"
+        android:hint=" Create Password"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createUserName" />
+
+    <EditText
+        android:id="@+id/createUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="50dp"
+        android:hint="Create Username"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterEmail" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/JoinButton"
         android:layout_width="229dp"
         android:layout_height="54dp"
         android:layout_marginTop="110dp"
-        android:text="LOGIN"
+        android:text="Sign Up"
         android:textSize="30dp"
         android:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password" />
-    <TextView
-        android:id="@+id/forgotten_p"
-        android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:layout_marginTop="15dp"
-        android:text="Forgotten Passwoard?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginButton" />
-    <TextView
-        android:id="@+id/createAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or Create a New Account?"
-        android:layout_marginTop="-10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/forgotten_p" />
+        app:layout_constraintTop_toBottomOf="@id/createPassword" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
