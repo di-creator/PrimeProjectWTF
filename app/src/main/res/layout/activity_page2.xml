@@ -10,7 +10,7 @@
         android:id="@+id/background_image"
         android:layout_width="450dp"
         android:layout_height="565dp"
-        android:src="@drawable/Union"
+        android:src="@drawable/union"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="189dp" />
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/welcomeintro"
+        android:id="@+id/welcomeIntro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="38dp"
@@ -49,7 +49,7 @@
         android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcomeintro" />
+        app:layout_constraintTop_toBottomOf="@id/welcomeIntro" />
 
     <EditText
         android:id="@+id/password"

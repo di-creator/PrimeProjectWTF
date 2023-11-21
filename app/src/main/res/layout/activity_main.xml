@@ -9,7 +9,7 @@
     tools:context=".MainActivity"
     android:background="@drawable/image">
     <ImageView
-        android:id="@+id/profile1"
+        android:id="@+id/profile4"
         android:layout_width="93dp"
         android:layout_height="93dp"
         android:src="@drawable/profile4"
@@ -18,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <ImageView
-        android:id="@+id/profile2"
+        android:id="@+id/profile3"
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:src="@drawable/profile3"
-        app:layout_constraintTop_toBottomOf="@id/profile1"
-        app:layout_constraintEnd_toEndOf="@id/profile1"/>
+        app:layout_constraintTop_toBottomOf="@id/profile4"
+        app:layout_constraintEnd_toEndOf="@id/profile4"/>
     <TextView
         android:id="@+id/startedText"
         android:layout_width="match_parent"
@@ -33,23 +33,28 @@
         android:textSize="67sp"
         android:textStyle="bold"
         android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/profile2"/>
+        app:layout_constraintTop_toBottomOf="@+id/profile3"/>
     <TextView
+        android:id="@+id/growTogether"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Grow Together"
         android:textSize="18dp"
         android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/startedText"/>
     <Button
+        android:id="@+id/joinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="JOIN NOW"
         android:textColor="#ffffff"
         android:textSize="24dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/growTogether"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
