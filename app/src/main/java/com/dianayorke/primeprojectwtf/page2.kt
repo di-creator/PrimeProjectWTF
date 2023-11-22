@@ -20,3 +20,4 @@ class page2 : AppCompatActivity() {
 
     }
 }
+
