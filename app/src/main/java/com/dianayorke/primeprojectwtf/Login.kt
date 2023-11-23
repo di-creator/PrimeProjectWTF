@@ -3,9 +3,9 @@ package com.dianayorke.primeprojectwtf
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class page3 : AppCompatActivity() {
+class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page3)
+        setContentView(R.layout.activity_login)
     }
 }
