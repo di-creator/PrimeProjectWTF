@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val joinButton: Button = this.findViewById(R.id.joinButton)
 
         joinButton.setOnClickListener {
-            val intent = Intent(this, page2::class.java )
+            val intent = Intent(this, Login::class.java )
 
             this.startActivity(intent)
         }

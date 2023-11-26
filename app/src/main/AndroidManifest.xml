@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PrimeProjectWTF"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
             android:name=".Forgotpassword"
             android:exported="false" />
         <activity
